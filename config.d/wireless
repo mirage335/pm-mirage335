@@ -1,0 +1,1 @@
+SUSPEND_MODULES="ipw2200 libipw cfg80211 lib80211 mac80211i iwlwifi iwldvm"

@@ -1,0 +1,6 @@
+#!/bin/bash
+case $1 in
+	hibernate|suspend)
+		su commonadmin -c "xlock -mode maze -display :0&"
+	;;
+esac

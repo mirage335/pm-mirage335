@@ -1,0 +1,1 @@
+SUSPEND_MODULES="vboxdrv vboxnetflt vboxnetadp vboxpci"

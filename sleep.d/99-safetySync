@@ -1,0 +1,4 @@
+#!/bin/sh
+/bin/sync
+/bin/sync
+/bin/sync

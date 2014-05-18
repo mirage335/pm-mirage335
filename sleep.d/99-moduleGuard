@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. "${PM_FUNCTIONS}"
+
+case "$1" in
+	suspend|hibernate)
+	
+		[ -z "$SUSPEND_MODULES" ] && exit
+		for x in $SUSPEND_MODULES ; do
+			printf "Testing kernel module %s..." "$x"
+			moduleStatus=`lsmod | grep $x`
+			if [[ -n "$moduleStatus" ]]
+			then
+				echo "DANGER! Aborting suspend!"
+				touch $INHIBIT
+			else
+				echo "safe."
+			fi
+		done
+	;;
+esac

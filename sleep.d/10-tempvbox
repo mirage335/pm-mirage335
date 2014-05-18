@@ -1,0 +1,10 @@
+#!/bin/bash
+
+case "$1" in
+	hibernate|suspend)
+		PATH="$PATH:/opt/bin"
+		/usr/bin/find /tmp/tempVBox -name suspend.sh -exec {} \;
+		sync ; sync
+		sleep 1
+	;;
+esac

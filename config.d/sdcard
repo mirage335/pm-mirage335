@@ -1,0 +1,1 @@
+SUSPEND_MODULES="sdhci sdhci_pci mmc_core mmc_block"
