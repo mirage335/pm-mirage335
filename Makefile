@@ -1,4 +1,5 @@
 MKDIR_P = mkdir -p
+DESTDIR ?= /
 
 all:
 
