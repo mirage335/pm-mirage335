@@ -1,1 +1,1 @@
-#HOOK_BLACKLIST="01-lock"
+HOOK_BLACKLIST="01-lock"
